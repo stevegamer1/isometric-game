@@ -3,8 +3,8 @@ Sources of videogame now creating by Digital Giraffes
 
 -----------------------------------------------------------------------------------
 
-## Versioning
-# Some Rules:
+# Versioning
+## Some Rules:
 * Every new version must have its own branch
 * Naming: X.Y.Z, where
  - X - realize version
