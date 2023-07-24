@@ -6,14 +6,23 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
+<<<<<<< Updated upstream
 config_version=4
 
 _global_script_classes=[  ]
 _global_script_class_icons={
 }
+=======
+config_version=5
+>>>>>>> Stashed changes
 
 [application]
 
 config/name="Dream Game"
+<<<<<<< Updated upstream
 run/main_scene="res://scenes/default.tscn"
+=======
+run/main_scene="res://scenes/Default.tscn"
+config/features=PackedStringArray("4.1")
+>>>>>>> Stashed changes
 config/icon="res://icon.png"

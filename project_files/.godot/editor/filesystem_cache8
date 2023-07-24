@@ -1,9 +1,0 @@
-ea4bc82a6ad023ab7ee23ee620429895
-::res://::1690098566
-icon.svg::CompressedTexture2D::7868639145720649073::1690021549::1690021571::1::::<><>::
-main.tscn::PackedScene::1511517036586735710::1690098415::0::1::::<><>::uid://bcv72ydly31d0::::res://sprites_tmp/platform.png<>uid://cvg7cdm82rymb::::res://sprites_tmp/char.png
-::res://bin/::1690098451
-gdexample.gdextension::GDExtension::-1::1690021549::0::1::::<><>::
-::res://sprites_tmp/::1690021571
-char.png::CompressedTexture2D::6261140043309427281::1690021549::1690021571::1::::<><>::
-platform.png::CompressedTexture2D::2572142729736189287::1690021549::1690021571::1::::<><>::
