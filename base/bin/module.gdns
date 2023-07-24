@@ -1,0 +1,9 @@
+[gd_resource type="NativeScript" load_steps=2 format=2]
+
+[ext_resource path="res://bin/module.gdnlib" type="GDNativeLibrary" id=1]
+
+[resource]
+
+resource_name = "CharController2D"
+class_name = "CharController2D"
+library = ExtResource( 1 )

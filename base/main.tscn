@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://bin/module.gdnlib" type="GDNativeLibrary" id=1]
+[ext_resource path="res://tmp_sprites/platform.png" type="Texture" id=2]
+[ext_resource path="res://tmp_sprites/char.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 250, 10 )
+
+[sub_resource type="NativeScript" id=2]
+resource_name = "CharController2D"
+class_name = "CharController2D"
+library = ExtResource( 1 )
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 32.0156
+
+[node name="main" type="Node2D"]
+
+[node name="platform" type="StaticBody2D" parent="."]
+position = Vector2( 515, 313 )
+
+[node name="Sprite" type="Sprite" parent="platform"]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform"]
+position = Vector2( 200, -210 )
+rotation = 0.541052
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="platform"]
+position = Vector2( -200, -210 )
+rotation = -0.541052
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="platform"]
+position = Vector2( 200, 54 )
+rotation = -0.541052
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="platform"]
+position = Vector2( -200, 54 )
+rotation = 0.541052
+shape = SubResource( 3 )
+
+[node name="char" type="KinematicBody2D" parent="."]
+position = Vector2( 513, 315 )
+script = SubResource( 2 )
+Speed = 400.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="char"]
+scale = Vector2( 1, 0.6 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="char"]
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -64, -124 )

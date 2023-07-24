@@ -4,15 +4,22 @@ using namespace godot;
 
 void CharController2D::_register_methods() {
     register_method("_physics_process", &CharController2D::_physics_process);
+    register_property<CharController2D, float>("Speed", &CharController2D::set_speed, &CharController2D::get_speed, 200.0);
 }
 
 CharController2D::CharController2D() {
-    // set the behaviour of inherited CharacterBody2D to top-down
-    // instead of platformer-like
-    set_motion_mode(MOTION_MODE_FLOATING);
+    speed_ = 200.0;
 }
 
 CharController2D::~CharController2D() {
+}
+
+void CharController2D::set_speed(float p_speed) {
+    speed_ = p_speed;
+}
+
+float CharController2D::get_speed() {
+    return speed_;
 }
 
 void CharController2D::_init() {
@@ -24,6 +31,5 @@ Vector2 get_input_direction() {
 }
 
 void CharController2D::_physics_process(float delta) {
-    set_velocity(get_input_direction() * speed_);
-    move_and_slide();
+    move_and_slide(get_input_direction() * speed_);
 }
