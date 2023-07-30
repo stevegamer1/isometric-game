@@ -4,7 +4,7 @@ Sources of videogame now creating by Digital Giraffes
 -----------------------------------------------------------------------------------
 
 # On this branch
-WASD movement. First implemented in godot 4.1, now being moved to 3.5.2 (LTS).
+Basic movement animation for main character. Using sprite sheet.
 
 # Versioning
 ## Some Rules:
