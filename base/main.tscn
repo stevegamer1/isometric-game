@@ -660,3 +660,6 @@ offset = Vector2( -16, -32 )
 __meta__ = {
 "_editor_description_": ""
 }
+
+[node name="Camera2D" type="Camera2D" parent="char"]
+current = true
